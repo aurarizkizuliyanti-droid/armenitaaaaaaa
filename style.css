@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#615A35;
+    font-family:'Poppins', sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+
+    text-align:center;
+
+    animation:fade 2s;
+}
+
+h1{
+    font-family:'Playfair Display', serif;
+
+    font-size:3rem;
+
+    margin-bottom:40px;
+
+    color:#FFF8E7;
+}
+
+.letter{
+    background:#FFEE8C;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.25);
+
+    line-height:2;
+
+    color:#4B4532;
+
+    animation:fadeUp 2s;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+.last{
+    font-weight:600;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* White Hearts */
+
+.heart{
+    position:fixed;
+
+    top:-30px;
+
+    font-size:18px;
+
+    animation:fall linear forwards;
+
+    user-select:none;
+
+    pointer-events:none;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(360deg);
+
+        opacity:0;
+    }
+}
